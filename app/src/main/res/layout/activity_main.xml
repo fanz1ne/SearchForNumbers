@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252B42"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/numbers_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:width="100dp"
+        android:height="25dp"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        android:text="Number 2 is :"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/number_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/number_1"
+        app:layout_constraintTop_toBottomOf="@+id/number_1" />
+
+    <TextView
+        android:id="@+id/number_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:width="100dp"
+        android:height="25dp"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        android:text="Number 1 is :"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/textQuestion" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#FFFEFE"
+        android:paddingLeft="50dp"
+        android:paddingTop="5dp"
+        android:paddingRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/quesesNumbwer_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="50dp"
+        android:height="25dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/quesesNumbwer_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quesesNumbwer_1"
+        app:layout_constraintTop_toBottomOf="@+id/quesesNumbwer_1"
+        app:layout_constraintVertical_bias="0.057"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/quesesNumbwer_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:width="50dp"
+        android:height="25dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toEndOf="@+id/number_1"
+        app:layout_constraintTop_toBottomOf="@+id/textQuestion"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:width="165dp"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        android:text="Do you know numbers?"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toEndOf="@+id/Result"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:width="100dp"
+        android:height="60dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Очистить поля"
+        app:layout_constraintEnd_toEndOf="@+id/Result"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Result"
+        app:layout_constraintTop_toBottomOf="@+id/Result" />
+
+    <Button
+        android:id="@+id/buttonSubstract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:width="100dp"
+        android:height="50dp"
+        android:backgroundTint="#E91E63"
+        android:text="Вычесть"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAdd"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdd"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+
+    <Button
+        android:id="@+id/buttonMulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:width="110dp"
+        android:height="50dp"
+        android:backgroundTint="#E91E63"
+        android:text="Умножить "
+        app:layout_constraintEnd_toEndOf="@+id/buttonSubstract"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonSubstract"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubstract" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:width="100dp"
+        android:height="50dp"
+        android:backgroundTint="#E91E63"
+        android:text="Сложить "
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubstract"
+        app:layout_constraintEnd_toEndOf="@+id/buttonReset"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonReset"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReset"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:width="110dp"
+        android:height="50dp"
+        android:backgroundTint="#E91E63"
+        android:text="Делить "
+        app:layout_constraintEnd_toEndOf="@+id/buttonMulty"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonMulty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMulty" />
+
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BCD4"
+        android:text="ПРОВЕРИТЬ ОТВЕТ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/numbers_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/numbers_2"
+        app:layout_constraintTop_toBottomOf="@+id/numbers_2"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/buttonChenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="ПОМЕНЯТЬ ЧИСЛА"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCheck"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonCheck"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCheck"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:height="200dp"
+        android:background="#FFFFFF"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="150sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChenge"
+        app:layout_constraintVertical_bias="0.514" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
