@@ -3,6 +3,7 @@ package com.example.firstapp
 //привет2
 //привет3
 //привет4
+//привет5
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
